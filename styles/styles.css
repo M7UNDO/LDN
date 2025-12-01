@@ -1,0 +1,131 @@
+/*Satoshi Font*/
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+/*Neue Montreal Font*/
+@import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+
+:root{
+  --primary-colour:#c3cccb;
+  --accent-colour: #2ba4f1;
+  --background-colour: rgba(246, 246, 246, 1);
+  --typography-colour:#333d47;
+  
+  /*fonts*/
+  --primary-font: "Satoshi", sans-serif;
+  --secondary-font: "PP Neue Montreal", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--primary-font), var(--secondary-font),'Arial', sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--background-colour);
+    color: var(--typography-colour);
+    
+    width: 100%;
+
+}
+
+main{
+    min-height: 85vh;
+
+}
+
+header{
+    height: 6rem;
+    width: 100%;
+}
+
+.nav-container{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-colour);
+    box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.573);
+}
+
+.nav-menu{
+    width: fit-content;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.navlinks{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+
+.navlinks li{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+.navlinks a{
+    color: var(--typography-colour);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+
+a.active{
+    color: var(--accent-colour);
+}
+
+.socials-container{
+    margin: 0 1.5rem;
+}
+
+.sm{
+    font-size: 2rem;
+    color: var(--typography-colour);
+    display: inline-block;
+}
+
+
+.nav-logo{
+    padding: 1rem;
+}
+
+.logo{
+    cursor: pointer;
+    color: var(--typography-colour);
+    text-decoration: none;
+    display: block;
+}
+
+#hero{
+    height: 60vh;
+    width: 100%;
+}
+
+footer{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333d47;
+    color: var(--background-colour);
+}
