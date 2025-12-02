@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | LDN</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
     <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <nav class="nav-container">
-      </nav>
+      <nav class="nav-container"></nav>
     </header>
     <main>
       <div class="contact-container">
         <form action="" class="contact-left">
           <div class="contact-left-title">
             <h2>Contact Us</h2>
-            <hr>
+            <hr />
           </div>
+
+          <input type="text" name="name" placeholder="First Name" class="contact-inputs" required />
+          <input type="email" name="email" placeholder="Email Address" class="contact-inputs" required />
+          <textarea name="" placeholder="Message" class="contact-inputs" required></textarea>
+          <button type="submit">Submit<i class="fa-solid fa-envelope"></i></button>
         </form>
-        <input type="text" name="name" placeholder="First Name" class="contact-inputs" required>
-        <input type="email" name="email" placeholder="Email Address" class="contact-inputs" required>
-        <textarea name="" placeholder="Message" class="contact-inputs" required></textarea>
-        <button type="submit">Submit<i class="fa-solid fa-envelope"></i></button>
+
         <div class="contact-right">
-          <img src="" alt="">
+          <img src="../images/graphics/Email_Graphic.png" alt="" />
         </div>
       </div>
     </main>
