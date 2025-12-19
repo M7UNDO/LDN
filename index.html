@@ -3,16 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="LDN" />
     <title>Home | LDN</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/home.css" />
+    <script src="https://kit.fontawesome.com/a977cb27e6.js" crossorigin="anonymous" defer></script>
   </head>
   <body>
     <header>
       <nav class="nav-container"></nav>
     </header>
     <main>
-      <section id="hero"></section>
+      <section id="hero-banner">
+        <div class="hero-slide slide1 active">
+          <div class="hero-content">
+            <h1>Professional Legal Services Close to Home</h1>
+            <p>
+              Reliable, accessible, and community-focused legal assistance for individuals, families, and small
+              businesses.
+            </p>
+            <a href="#" class="cta-btn">View Our Services</a>
+          </div>
+          <img
+            class="hero-bg"
+            src="images/banner/hennie-stander-uL_2nhIOvfM-unsplash.jpg"
+            alt="gray scale photo of buildings"
+          />
+        </div>
+
+        <div class="hero-slide slide2">
+          <div class="hero-content">
+            <h1>Legal Support You Can Trust</h1>
+            <p>
+              From everyday legal guidance to complex matters, our team offers clear advice, strong representation, and
+              compassionate service. We are committed to protecting your rights and helping you make informed decisions.
+            </p>
+            <a href="#" class="cta-btn">Learn About Our Firm</a>
+          </div>
+          <img
+            class="hero-bg"
+            src="images/banner/pexels-nicola-barts-7927545.jpg"
+            alt="man wit a briefcase in his hand"
+          />
+        </div>
+
+        <div class="hero-slide slide3">
+          <div class="hero-content">
+            <h1>Serving Our Community With Integrity</h1>
+            <p>
+              We proudly stand as a community-rooted law firm dedicated to fairness, accessibility, and integrity.
+              <br />Whether you need assistance with disputes, documentation, property matters, or family issues, we are
+              here to help.
+            </p>
+            <a href="#" class="cta-btn">Get Legal Help</a>
+          </div>
+          <img
+            class="hero-bg"
+            src="images/banner/rachel-martin-yHOhVzVRFMc-unsplash.jpg"
+            alt="people crossing on pedestrian lane near buildings"
+          />
+        </div>
+
+        <div class="hero-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <section class="intro-section">
+        <div class="intro-container">
+          <h2>Committed to Excellence</h2>
+          <p>
+            LDN is a full-service law firm offering clear guidance, strong representation, and tailored solutions for
+            individuals and businesses. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra
+            massa non mauris ullamcorper, nec ultricies arcu imperdiet. In interdum commodo nunc quis ultrices.
+          </p>
+          <a href="about/about.html" class="link-btn">Learn More</a>
+        </div>
+      </section>
+
+      <section class="practice-areas">
+        <div class="practice-container">
+          <h2>Areas of Expertise</h2>
+          <p>
+            Nulla facilisi. Nam accumsan rhoncus massa sit amet accumsan. Ut lobortis eleifend nisl, sit amet porttitor
+            est dapibus vel. Vestibulum massa augue, tempus ac vehicula eu, tempor eget quam. In convallis vel mi nec
+            iaculis.
+          </p>
+          <div class="practice-grid">
+            <div class="practice-card">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <h3>Conveyancing</h3>
+              <div>Efficient and secure handling of divroperty transfers and real estate transactions.</div>
+            </div>
+
+            <div class="practice-card">
+              <i class="fa-solid fa-file-signature"></i>
+              <h3>Notary Services</h3>
+              <div>Certification of documents and notarial services for legal agreements.</div>
+            </div>
+
+            <div class="practice-card">
+              <i class="fa-solid fa-gavel"></i>
+              <h3>Civil Litigation</h3>
+              <div>Strong legal representation for disputes, claims, and court proceedings.</div>
+            </div>
+
+            <div class="practice-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <h3>Labour Law</h3>
+              <div>Expert guidance on employment disputes, contracts, and workplace matters.</div>
+            </div>
+
+            <div class="practice-card">
+              <i class="fa-solid fa-users"></i>
+              <h3>Deceased Estates</h3>
+              <div>Compassionate assistance with estate administration and winding up processes.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="map-section">
+        <div class="container">
+          <h2>Our Location</h2>
+          <p>Visit our offices or contact us for legal assistance.</p>
+
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5056.117322799694!2d28.1907176968892!3d-26.351912171155757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951c1005123755%3A0x9fa0b2851c3d85cd!2s866%20Thobejane%20St%2C%20Vosloorus%20Ext%201%2C%20Vosloorus%2C%201475!5e0!3m2!1sen!2sza!4v1765396445336!5m2!1sen!2sza"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-content">
+          <h2>Need Legal Assistance?</h2>
+          <p>Speak to one of our legal professionals today.</p>
+          <a href="contact/contact.html" class="btn cta-btn">Contact Us</a>
+        </div>
+      </section>
     </main>
     <footer>
       <p>&copy; 2025 LDN. All Rights Reserved</p>
@@ -20,5 +160,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/home.js" defer></script>
   </body>
 </html>

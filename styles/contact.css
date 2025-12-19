@@ -1,20 +1,150 @@
-body{
-    background: linear-gradient(180deg,rgba(43, 164, 241, 1) 0%, rgba(9, 9, 121, 1) 100%);
+.contact-container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  
 }
 
-.contact-container{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+/* Form Box */
+.contact-left {
+  width: 100%;
+  padding: 3rem 2.5rem;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.contact-left{
-    height: 70%;
-    min-width: 40rem;
-    margin: 0 2rem;
+.contact-left-title{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.225);
+    gap: 3rem;
+}
+
+/* Title */
+.contact-left-title h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.contact-left-title p{
+    opacity: 0.8;
+}
+
+.contact-left-title hr {
+  width: 5rem;
+  height: 0.3rem;
+  border: none;
+  background: var(--accent-colour);
+  border-radius: 1rem;
+}
+
+/* Inputs */
+/* Line Inputs */
+.contact-inputs {
+  width: 100%;
+  padding: 1.2rem 0;
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 0.15rem solid #ccc;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-inputs:focus {
+  border-bottom-color: var(--accent-colour);
+}
+
+
+textarea.contact-inputs {
+  min-height: 14rem;
+  resize: none;
+}
+
+
+/* Submit Button */
+button[type="submit"] {
+  width: 50%;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  background-color: var(--accent-colour);
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background: var(--accent-colour-hover);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.171);
+  transform: translateY(-0.2rem);
+}
+
+/* Shared line style */
+.contact-inputs {
+  width: 100%;
+  padding: 1.2rem 0;
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 0.15rem solid #ccc;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Focus underline color */
+.contact-inputs:focus {
+  border-bottom-color: #000;
+  color: #000;
+}
+
+/* --- SELECT STYLING --- */
+.select-line {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent url("data:image/svg+xml;utf8,<svg fill='black' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 6l4 4 4-4z'/></svg>") no-repeat right 0 center;
+  padding-right: 2.4rem;
+  cursor: pointer;
+  color: #555;
+}
+
+/* On focus */
+.select-line:focus {
+  border-bottom-color: #000;
+  color: #000;
+}
+
+/* Improve option styling */
+.select-line option {
+  color: #000;
+  background: #fff;
+  font-size: 1.6rem;
+}
+
+/* Hover for desktop */
+.select-line:hover {
+  border-bottom-color: #888;
+}
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+  .contact-left {
+    padding: 2.2rem 1.6rem;
+  }
+
+  .contact-left-title h2 {
+    font-size: 2rem;
+  }
 }

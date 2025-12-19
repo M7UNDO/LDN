@@ -7,6 +7,7 @@
 :root{
   --primary-colour:#c3cccb;
   --accent-colour: #2ba4f1;
+  --accent-colour-hover: #2283C1;
   --background-colour: rgba(246, 246, 246, 1);
   --typography-colour:#333d47;
   
@@ -52,18 +53,18 @@ header{
 .nav-container{
     height: 100%;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--background-colour);
-    box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.573);
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.388);
 }
 
 .nav-menu{
     width: fit-content;
     height: 100%;
-    padding: 1rem;
+    /*padding: 1rem;*/
     display: flex;
     align-items: center;
 
@@ -72,32 +73,71 @@ header{
 .navlinks{
     list-style: none;
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     padding: 0 2rem;
 }
 
 
 .navlinks li{
     display: inline-block;
+    font-family: var(--secondary-font);
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 450;
+    
 
 }
 
 .navlinks a{
+    min-width: 6rem;
     color: var(--typography-colour);
+    opacity: 0.8;
     text-decoration: none;
+    text-align: center;
     text-transform: uppercase;
     display: inline-block;
     
 }
 
+.navlinks a.active {
+    color: var(--accent-colour);
+    position: relative;
+}
+
+.navlinks a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2.2rem; 
+    width: 100%;
+    height: 0.3rem;
+    background-color: var(--accent-colour);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s ease;
+}
+
+.navlinks a.active.active-loaded::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+
 a.active{
     color: var(--accent-colour);
 }
 
+.vl{
+    border-left: 1px solid var(--typography-colour);
+    height: 50%;
+    opacity: 0.5;
+}
+
 .socials-container{
     margin: 0 1.5rem;
+    display: flex;
+    gap: 1.5rem;
 }
 
 .sm{
@@ -121,9 +161,13 @@ a.active{
 #hero{
     height: 60vh;
     width: 100%;
+    background: linear-gradient(299deg,rgba(43, 164, 241, 1) 0%, rgba(9, 9, 121, 1) 100%);
 }
 
 footer{
+    text-align: center;
+    padding: 2.4rem 0;
+    font-size: 1.4rem;
     height: 5rem;
     width: 100%;
     display: flex;

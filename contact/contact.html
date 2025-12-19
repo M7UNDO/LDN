@@ -14,21 +14,41 @@
     </header>
     <main>
       <div class="contact-container">
-        <form action="" class="contact-left">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
           <div class="contact-left-title">
-            <h2>Contact Us</h2>
-            <hr />
+            <div>
+              <h2>Contact Us</h2>
+              <hr class="animated-hr"/>
+            </div>
+            
+            <p>
+              We invite you to contact us through the form below. For your security, please do not share any
+              confidential information here. Please note that sending a message through this form does not establish an
+              attorney-client relationship.
+            </p>
+            
+
           </div>
-
-          <input type="text" name="name" placeholder="First Name" class="contact-inputs" required />
+          <input type="hidden" name="access_key" value="0db9ee02-e0bb-4070-854f-a01d4c7cbf17" />
+          <input type="text" name="first_name" placeholder="First Name" class="contact-inputs" required />
+          <input type="text" name="last_name" placeholder="Last Name" class="contact-inputs" required />
           <input type="email" name="email" placeholder="Email Address" class="contact-inputs" required />
-          <textarea name="" placeholder="Message" class="contact-inputs" required></textarea>
-          <button type="submit">Submit<i class="fa-solid fa-envelope"></i></button>
+          <select name="service" class="contact-inputs" required>
+            <option value="" disabled selected>Select Service</option>
+            <option value="Conveyancing">CONVEYANCING</option>
+            <option value="Notary">NOTARY</option>
+            <option value="Civil Litigation">CIVIL LITIGATION</option>
+            <option value="Labour Law Disputes">LABOUR LAW DISPUTES</option>
+            <option value="Deceased Estates & Estate Planning">DECEASED ESTATES & ESTATE PLANNING</option>
+            <option value="Contractual Drafting and Dispute Resolution">
+              CONTRACTUAL DRAFTING AND DISPUTE RESOLUTION
+            </option>
+            <option value="Trust Administration">TRUST ADMINISTRATION</option>
+            <option value="Divorces">DIVORCES</option>
+          </select>
+          <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+          <button type="submit">Send Message<i class="fa-solid fa-envelope"></i></button>
         </form>
-
-        <div class="contact-right">
-          <img src="../images/graphics/Email_Graphic.png" alt="" />
-        </div>
       </div>
     </main>
     <footer>
@@ -37,5 +57,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
   </body>
 </html>
