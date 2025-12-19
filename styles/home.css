@@ -116,6 +116,18 @@ h2 {
   transition: all 0.3s;
 }
 
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-colour);
+  opacity: 0.5;
+  transition: all ease-in-out 200ms;
+  z-index: 2;
+}
+
 .dot.active{
   background-color: white;
 }
